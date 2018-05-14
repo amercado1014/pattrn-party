@@ -1,3 +1,38 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; 
+  margin: 0;
+}
+
 h1 {
-  color: red;
+  display: inline;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #2F2235;
+  height: 70px;
+}
+
+.pattrn {
+  margin-left: 78px;
+
+}
+
+.party {
+  color: #34D1D1;
+  margin-left: 5px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 98px;
 }
