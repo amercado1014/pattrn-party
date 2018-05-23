@@ -58,3 +58,100 @@ header {
 .accordion-title {
   margin-right: 47px;
 }
+
+.tabs {
+  list-style: none;
+  border-bottom: none;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 0px;
+}
+
+.tab {
+  border: 1px solid white;
+  border-bottom: 1px solid #D1D2D3; 
+  padding: 7px;
+  height: 40px;
+  width: 25%;
+  background: #f2f2f2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tabs .active {
+  background: white;
+  border: 1px solid #D1D2D3;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.place-holder {
+  height: 90%;
+  width: 25%;
+  background: #f2f2f2;
+}
+
+.tab-text {
+  padding: 10px;
+  font-size: 1.2em;
+  width: 65%;
+  height: 90%;
+}
+
+.tab-title {
+  font-weight: 600;
+}
+
+.tab-hr {
+  width: 100%;
+}
+
+.tab-text p {
+  margin-top: 1.2em
+}
+
+.current {
+	height: 400px;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #D1D2D3;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tab-mobile,
+.hidden { 
+  display: none; 
+}
+
+
+@media screen and (max-width: 1000px) {
+	.tabs {
+		display: none;
+	}
+	.tab-mobile {
+		display: block;
+    cursor: pointer;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+  }
+  
+  h3.active {
+    background: white;
+    border: 1px solid #D1D2D3;
+    border-bottom: none;
+    font-weight: 600;
+  }
+}
+
+
+
+
+
+
