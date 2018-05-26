@@ -17,6 +17,11 @@ display: inline-block;
 font-size: 22px;
 }
 
+h3 {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
 hr {
   display: inline-block;
   width: 72%;
@@ -90,7 +95,8 @@ header {
 .place-holder {
   height: 90%;
   width: 25%;
-  background: #f2f2f2;
+  background: url('place-holder.jpg') no-repeat;
+  background-size: 100% 100%;
 }
 
 .tab-text {
@@ -98,6 +104,7 @@ header {
   font-size: 1.2em;
   width: 65%;
   height: 90%;
+  overflow: scroll;
 }
 
 .tab-title {
@@ -129,6 +136,44 @@ header {
   display: none; 
 }
 
+.flexible-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+  margin: 50px auto;
+}
+
+.card {
+  margin: 1%;
+  height: 300px;
+  border: 1px solid #D1D2D3;
+}
+
+.single {
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+.double {
+  flex-grow: 2;
+  flex-basis: 62%;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #D1D2D3;
+  white-space: nowrap;
+}
+
+.image {
+  height: 84%;
+  background: url('place-holder.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+
 
 @media screen and (max-width: 1000px) {
 	.tabs {
@@ -150,7 +195,17 @@ header {
   }
 }
 
+@media screen and (max-width: 755px) {
+  .flexible-cards {
+    flex-direction: column;
+  }
 
+  .single,
+  .double {
+    width: 100%;
+    margin: 20px;
+  }
+}
 
 
 
