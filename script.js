@@ -9,6 +9,11 @@ $('.tab').on('click', event => {
     $(`h3#${tab}`).toggleClass('active').removeClass('not-active');
 });
 
+$('.menu').on('click', toggleResponsive);
+
+function toggleResponsive() {
+  $('.topnav').toggleClass('responsive');
+}
 
 	
 	
