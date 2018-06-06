@@ -8,7 +8,7 @@
 }
 
 body {
-  min-width: 320px;
+  min-width: 400px;
 }
 
 h1 {
@@ -68,13 +68,17 @@ header {
   margin-right: 47px;
 }
 
+.accordion {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .tabs {
   list-style: none;
   border-bottom: none;
   display: flex;
   width: 80%;
   margin: auto;
-  margin-top: 50px;
   padding-left: 0px;
 }
 
@@ -108,7 +112,6 @@ header {
   font-size: 1.2em;
   width: 65%;
   height: 90%;
-  overflow: scroll;
 }
 
 .tab-title {
@@ -227,6 +230,23 @@ ul.topnav .menu {
   border-radius: 50%;
 }
 
+.view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.code-btn {
+  background-color: #3f3244;
+  height: 50px;
+  width: 318px;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
 @media screen and (max-width:1050px) {
   ul.topnav li:not(:first-child) {
     display: none;
@@ -264,9 +284,32 @@ ul.topnav .menu {
 }
 
 @media screen and (max-width: 1000px) {
+  .accordion-title,
+  hr {
+    display: block;
+    margin: 0 auto;
+  }
+
+  hr {
+    width: 90px;
+    margin-top: 10px;
+  }
+
 	.tabs {
 		display: none;
-	}
+  }
+  
+  article.current {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 525px;
+  }
+
+  .place-holder,
+  .tab-text {
+    width: 100%;
+  }
+
 	.tab-mobile {
 		display: block;
     cursor: pointer;
@@ -284,8 +327,24 @@ ul.topnav .menu {
 }
 
 @media screen and (max-width: 755px) {
-  .flexible-cards {
+  h2 {
+    font-size: 1.2em;
+  } 
+
+  header {
     flex-direction: column;
+  }
+  
+  .pattrn {
+    margin-left: 0;
+  }
+  
+  .name {
+    margin-right: 0;
+  }
+  
+  .tab-text {
+    font-size: 1em;
   }
 
   .single,
